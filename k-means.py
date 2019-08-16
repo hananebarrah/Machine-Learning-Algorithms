@@ -9,7 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def get_data():
-    """_______________________Nummbers of observation per cluster________________________"""
+    """__________________________Nummber of observations per cluster___________________________"""
     obs_per_class = 50
     
     X1 = np.random.randn(obs_per_class, 2) + np.array([3, 3])
@@ -19,7 +19,7 @@ def get_data():
     return data
 
 def euclidien_dist(X1, X2):
-    """______________The Euclidien distance between 2 data points X1 and X2______________"""
+    """_________________The Euclidien distance between 2 data points X1 and X2_________________"""
     return np.linalg.norm(X1 - X2)
 
 def k_means(data, k, epsilon=0):
