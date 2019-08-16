@@ -21,6 +21,11 @@ It takes as input a set of data ![eq2](http://latex.codecogs.com/gif.latex?D%20%
 
 The python code of the k-means algorithm is included in the file k-means.py,  it is tested on synthetic data.
 
+## 3. Logistic Regression
+Logistic regression is a supervised learning method for binary classification. It inherits the name ***Logistic*** from the logistic function (called also sigmoid function) that is used at core of the algorithm.
+
+In this algorithm the features of the input observation ![eq8](http://latex.codecogs.com/gif.latex?X_%7Bi%7D%3D%5Cleft%20%5B%20x_%7Bi%2C1%7D%2C...%2C%20x_%7Bi%2Cm%7D%20%5Cright%20%5D) are combined linearly using some weights ![eq9](http://latex.codecogs.com/gif.latex?B%3D%5Cleft%20%5B%20B_%7B0%7D%2C...%2C%20B_%7Bm%7D%20%5Cright%20%5D) to predict an output value ![eq10](http://latex.codecogs.com/gif.latex?y_%7Bi%7D)
+
 # Dependencies
 - numpy
 - matplotlib
