@@ -19,7 +19,7 @@ It takes as input a set of data ![eq2](http://latex.codecogs.com/gif.latex?D%20%
 |4.	Update the clusters centers, each center ![eq5](http://latex.codecogs.com/gif.latex?C_%7Bi%7D) is computed as the mean of the points belonging to the ![eq6](http://latex.codecogs.com/gif.latex?i%5E%7Bth%7D) cluter.|
 |5.	Compute  ![eq7](http://latex.codecogs.com/gif.latex?%5Cleft%20%5C%7C%20C%5E%7BI%7D%20-%20C%5E%7BI-1%7D%5Cright%20%5C%7C), if it is smaller than a fixed threshold stop iterating, otherwise, repeat the process from the third step.|
 
-The k-means algorithm is implemented in the file k-means.py and is tested on synthetic data.
+The python code of the k-means algorithm is included in the file k-means.py,  it is tested on synthetic data.
 
 # Dependencies
 - numpy
