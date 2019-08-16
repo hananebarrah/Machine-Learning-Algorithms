@@ -15,7 +15,9 @@ It takes as input a set of data ![eq2](http://latex.codecogs.com/gif.latex?D%20%
 | --- |
 |1.	Input the dataset D and initialize the clusters number k.|
 |2.	Initialize the clusters centers ![eq3](http://latex.codecogs.com/gif.latex?C%20%3D%20%5Cleft%20%5C%7B%20C_%7Bi%7D%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bn%7D%20%5Cright%20%5C%7D_%7Bi%20%3D%201%2C%20...%2C%20k%7D)  randomly from the input dataset.|
-|3.	Assign each datum X_{j} to the cluster of the nearest center|
+|3.	Assign each datum ![eq4](http://latex.codecogs.com/gif.latex?X_%7Bj%7D) to the cluster of the nearest center|
+|4.	Update the clusters centers.|
+|5.	Compute  ![eq5](http://latex.codecogs.com/gif.latex?%5Cleft%20%5C%7C%20C%5E%7BI%7D%20-%20C%5E%7BI-1%7D%5Cright%20%5C%7C), if it is smaller than a fixed threshold stop iterating, otherwise, repeat the process from the third step.|
 
 # Dependencies
 - numpy
