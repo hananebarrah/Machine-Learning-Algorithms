@@ -28,9 +28,12 @@ Logistic regression is a supervised learning method for binary classification. I
    
 In this algorithm the features of the input observation  ![eq8](http://latex.codecogs.com/gif.latex?X_%7Bi%7D%3D%5Cleft%20%5B%20x_%7Bi%2C1%7D%2C...%2C%20x_%7Bi%2Cm%7D%20%5Cright%20%5D)  (m is the number of features) are combined linearly using some weights  ![eq9](http://latex.codecogs.com/gif.latex?B%3D%5Cleft%20%5B%20B_%7B0%7D%2C...%2C%20B_%7Bm%7D%20%5Cright%20%5D) to predict an output value ![eq10](http://latex.codecogs.com/gif.latex?%5Cwidehat%7By%7D_%7Bi%7D):
 
-   ![prediction](http://latex.codecogs.com/gif.latex?%5Cwidehat%7By%7D_%7Bi%7D%20%3D%20P%28X_%7Bi%7D%29%20%3D%20%5Cfrac%7B1%7D%7B1&plus;e%5E%7B-%28B_%7B0%7D&plus;%5Csum_%7B1%7D%5E%7Bm%7DB_%7Bj%7Dx_%7Bi%2C%20j%7D%29%7D%7D)  ; ![b0](http://latex.codecogs.com/gif.latex?B_%7B0%7D)  is the bias or the intercept.
+   ![prediction](http://latex.codecogs.com/gif.latex?%5Cwidehat%7By%7D_%7Bi%7D%20%3D%20P%28X_%7Bi%7D%29%20%3D%20%5Cfrac%7B1%7D%7B1&plus;e%5E%7B-%28B_%7B0%7D&plus;%5Csum_%7B1%7D%5E%7Bm%7DB_%7Bj%7Dx_%7Bi%2C%20j%7D%29%7D%7D)
+   ![b0](http://latex.codecogs.com/gif.latex?B_%7B0%7D)  is the bias or the intercept.
 
-The main goal of this algorithm is to find the best values of ![bj](http://latex.codecogs.com/gif.latex?B_%7Bj%7D) that minimize the error ![error](http://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7B2N%7D%5Csum_%7B1%7D%5E%7BN%7D%28y_%7Bi%7D-%5Cwidehat%7By%7D_%7Bi%7D%29)  using the gradient descent optimization method.
+The main goal of this algorithm is to find the best values of ![bj](http://latex.codecogs.com/gif.latex?B_%7Bj%7D) that minimize the following error using the gradient descent optimization method:
+
+   ![error](http://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7B2N%7D%5Csum_%7B1%7D%5E%7BN%7D%28y_%7Bi%7D-%5Cwidehat%7By%7D_%7Bi%7D%29)
 
 # Dependencies
 - numpy
