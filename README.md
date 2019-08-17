@@ -43,7 +43,10 @@ The main goal of this algorithm is to find the best values of ![bj](http://latex
    ![bj](http://latex.codecogs.com/gif.latex?B_%7Bj%7D%20%3D%20B_%7Bj%7D%20&plus;%20%5Calpha%20%5Ctimes%20%28y_%7Bi%7D-%5Cwidehat%7By%7D_%7Bi%7D%29%5Ctimes%20%5Cwidehat%7By%7D_%7Bi%7D%5Ctimes%20%281-%5Cwidehat%7By%7D_%7Bi%7D%29%5Ctimes%20x_%7Bi%2Cj%7D)
    
    ![alpha](http://latex.codecogs.com/gif.latex?%5Calpha)  is the learning rate where the good values are between 0.1 and 0.3
-
+   
+ 
+ In the file LogisticRegression.py the logistic regression algorithm is implemented and tested on synthetic 2D data.
+ 
 # Dependencies
 - numpy
 - matplotlib
