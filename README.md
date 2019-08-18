@@ -2,8 +2,8 @@
 This repository includes basic ML algorithms coded in Python from scratch
 
 ## 1. Linear Regression algorithm
-Linear Regression is a supervised ML algorithm that aims to find the line (in case of 2D) that best fits a set 2D scattered points. The model can be extended to a higher dimension, in this case we try to find the hyperplane that best approximate the scattered points. If the dimension of data (point) is N then the hyperplane dimension is (N-1).
-The code presented in linear_regression2D.py uses the Gradient Descent optimization method to find the values of the coefficients b and m that define the line that best approximate the data included in the 'data.csv' file. The equation of that line is defined as follows:
+Linear Regression is a supervised ML algorithm that aims to find the line (in case of 2D) that best fits a set of 2D scattered points. The model can be extended to a higher dimension, in this case we try to find the hyperplane that best approximate the scattered points. If the dimension of the input data (point) is D > 1 then the hyperplane dimension is (D-1), in this case the algorithm is called ***Multiple Linear Regression***
+The code presented in linear_regression2D.py uses the Gradient Descent optimization method to find the values of the coefficients b (bias or intercept) and m that define the line that best approximate the data included in the 'data.csv' file. The equation of that line is defined as follows:
   ![eq1](http://latex.codecogs.com/gif.latex?Y%20%3D%20m%5Ccdot%20X%20&plus;%20b)
 
 ## 2. K-means Clustering  algorithm
