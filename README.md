@@ -34,7 +34,7 @@ In this algorithm the features of the input observation  ![eq8](http://latex.cod
 
 The main goal of this algorithm is to find the best values of ![bj](http://latex.codecogs.com/gif.latex?B_%7Bj%7D) that minimize the following error using the gradient descent optimization method:
 
-   ![error](http://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7B2N%7D%5Csum_%7B1%7D%5E%7BN%7D%28y_%7Bi%7D-%5Cwidehat%7By%7D_%7Bi%7D%29)
+   ![error](http://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7B2N%7D%5Csum_%7B1%7D%5E%7BN%7D%28y_%7Bi%7D%20-%20%5Cwidehat%7By%7D_%7Bi%7D%29%5E%7B2%7D)
  
  The weights are modified iteratively as follows:
  
