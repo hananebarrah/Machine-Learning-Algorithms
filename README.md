@@ -54,6 +54,8 @@ The main goal of this algorithm is to find the best values of ![bj](http://latex
   ![mean](http://latex.codecogs.com/gif.latex?%5Cmu_%7Bk%7D%20%3D%20%5Cfrac%7B1%7D%7Bn_%7Bk%7D%7D%5Ctimes%20%5Csum_%7Bi%3D1%7D%5E%7BC_%7Bk%7D%7Dx_%7Bi%7D)
   
   ![variance](http://latex.codecogs.com/gif.latex?%5Csigma%20%5E%7B2%7D%20%3D%20%5Cfrac%7B1%7D%7Bn-K%7D%5Ctimes%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%28x_%7Bi%7D%20-%20%5Cmu%20_%7Bk%7D%29%5E%7B2%7D)
+  
+n is the total number of observation, K is the number of classes and ![nk](http://latex.codecogs.com/gif.latex?n_%7Bk%7D) is the number of observation in the ![kTh](http://latex.codecogs.com/gif.latex?k%5E%7Bth%7D) class.
  
 # Dependencies
 - numpy
