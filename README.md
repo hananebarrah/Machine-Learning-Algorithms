@@ -8,7 +8,7 @@ In linear_regression2D.py is implemented the ***Simple Linear Regression*** algo
   ![eq1](http://latex.codecogs.com/gif.latex?Y%20%3D%20m%5Ccdot%20X%20&plus;%20b)
 
 ## 2. K-means Clustering  algorithm
-k-means in a hard clustering algorithm that consists of grouping data into the most homogeneous groups. It is based on the classical theory of sets to creates homogeneous groups. Actually, during the clustering process each datum is assigned to one and only one cluster (the cluster of the nearest center).
+k-means is (unsupervised algorithm) a hard clustering algorithm that consists of grouping data into the most homogeneous groups. It is based on the classical theory of sets to creates homogeneous groups. Actually, during the clustering process each datum is assigned to one and only one cluster (the cluster of the nearest center).
 
 It takes as input a set of data ![eq2](http://latex.codecogs.com/gif.latex?D%20%3D%20%5Cleft%20%5C%7B%20X_%7Bj%7D%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bn%7D%20%5Cright%20%5C%7D_%7Bj%20%3D%201%2C%20...%2C%20N%7D) (n in the number of features and N in number of observations), the number of clusters k and creates iteratively k clusters.
 
@@ -47,6 +47,11 @@ The main goal of this algorithm is to find the best values of ![bj](http://latex
    
  
  In the file LogisticRegression.py the logistic regression algorithm is implemented and tested on synthetic 2D data.
+ 
+ ## 4. Linear Discriminant Analysis
+ Linear Discriminant Analysis is a supervised ML algorithm used for multi-class classification problems. The model is defined by the mean of each class (see equation (1)) and the variance (see equation (2)):
+ 
+  ![mean](http://latex.codecogs.com/gif.latex?%5Cmu_%7Bk%7D%20%3D%20%5Cfrac%7B1%7D%7Bn_%7Bk%7D%7D%5Ctimes%20%5Csum_%7Bi%3D1%7D%5E%7Bn_%7Bk%7D%7Dx_%7Bi%7D)
  
 # Dependencies
 - numpy
