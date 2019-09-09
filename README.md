@@ -58,8 +58,12 @@ The main goal of this algorithm is to find the best values of ![bj](http://latex
 ![n](http://latex.codecogs.com/gif.latex?n) is the total number of observations, ![K](http://latex.codecogs.com/gif.latex?K) is the number of classes and ![nk](http://latex.codecogs.com/gif.latex?n_%7Bk%7D) is the number of observations in the ![kTh](http://latex.codecogs.com/gif.latex?k%5E%7Bth%7D) class.
 
 The predictions are made by estimating the probability that a new input (x) belongs to each class, which are calculated using the Bayes Theorem:
+
   ![proba](http://latex.codecogs.com/gif.latex?P%28Y%20%3D%20k%7CX%20%3D%20x%29%3D%5Cfrac%7BP%28k%29%5Ctimes%20P%28x%7Ck%29%7D%7B%5Csum_%7Bl%3D1%7D%5E%7BK%7DP%28l%29%5Ctimes%20P%28x%7Cl%29%7D)
  
-# Dependencies
+## Dependencies
 - numpy
 - matplotlib
+
+## References
+Brownlee, J. Master Machine Learning Algorithms: Discover How They Work and Implement Them From Scratch. Jason Brownlee, 2016. https://books.google.co.ma/books?id=PdZBnQAACAAJ.
