@@ -68,8 +68,9 @@ By using a Gaussian Distribution Function to estimate the probability ( ![probaP
    where:  
    ![pk](http://latex.codecogs.com/gif.latex?P%28k%29%20%3D%20%5Cfrac%7Bn_%7Bk%7D%7D%7Bn%7D)
   
- The class that provides the highest value 0f  ![Dxk](http://latex.codecogs.com/gif.latex?D_%7Bk%7D%28x%29)  is the output class. 
- The LDA algorithm is coded in the Python file liear_discriminant_analysis.py and tested of synthetic data generated using Gaussian Distribution function.
+The class that provides the highest value of  ![Dxk](http://latex.codecogs.com/gif.latex?D_%7Bk%7D%28x%29)  is the output class. 
+
+The LDA algorithm is coded in the Python file liear_discriminant_analysis.py and tested of synthetic data generated using Gaussian Distribution function.
 ## Dependencies
 - numpy
 - matplotlib
