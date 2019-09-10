@@ -49,7 +49,7 @@ The main goal of this algorithm is to find the best values of ![bj](http://latex
  In the file LogisticRegression.py the logistic regression algorithm is implemented and tested on synthetic 2D data.
  
  ## 4. Linear Discriminant Analysis
- Linear Discriminant Analysis is a supervised ML algorithm used for multi-class classification problems. The model is defined by the mean of each class (![muk](http://latex.codecogs.com/gif.latex?%5Cmu_%7Bk%7D)) and the variance (![sigma](http://latex.codecogs.com/gif.latex?%5Csigma%20%5E%7B2%7D)):
+ Linear Discriminant Analysis is a supervised ML algorithm that is used for multi-class classification problems. The model is defined by the mean of each class (![muk](http://latex.codecogs.com/gif.latex?%5Cmu_%7Bk%7D)) and the variance (![sigma](http://latex.codecogs.com/gif.latex?%5Csigma%20%5E%7B2%7D)):
  
   ![mean](http://latex.codecogs.com/gif.latex?%5Cmu%20_%7Bk%7D%20%3D%20%5Cfrac%7B1%7D%7Bn_%7Bk%7D%7D%5Ctimes%20%5Csum_%7Bi%5Cin%20C_%7Bk%7D%7D%5E%7B%20%7Dx_%7Bi%7D)
   
