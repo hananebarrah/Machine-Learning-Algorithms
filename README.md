@@ -55,7 +55,7 @@ The main goal of this algorithm is to find the best values of ![bj](http://latex
   
   ![variance](http://latex.codecogs.com/gif.latex?%5Csigma%20%5E%7B2%7D%20%3D%20%5Cfrac%7B1%7D%7Bn-K%7D%5Ctimes%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%28x_%7Bi%7D%20-%20%5Cmu%20_%7Bk%7D%29%5E%7B2%7D)
   
-![n](http://latex.codecogs.com/gif.latex?n) is the total number of observations, ![K](http://latex.codecogs.com/gif.latex?K) is the number of classes, and ![nk](http://latex.codecogs.com/gif.latex?n_%7Bk%7D) is the number of observations in the ![kTh](http://latex.codecogs.com/gif.latex?k%5E%7Bth%7D) class. ![muk](http://latex.codecogs.com/gif.latex?%5Cmu%20_%7Bk%7D) is the mean of the ![kTh](http://latex.codecogs.com/gif.latex?k%5E%7Bth%7D) class. ![muk](http://latex.codecogs.com/gif.latex?%5Cmu%20_%7Bk%7D) class to which ![xi](http://latex.codecogs.com/gif.latex?x%20_%7Bk%7D) belongs.
+![n](http://latex.codecogs.com/gif.latex?n) is the total number of observations, ![K](http://latex.codecogs.com/gif.latex?K) is the number of classes, and ![nk](http://latex.codecogs.com/gif.latex?n_%7Bk%7D) is the number of observations in the ![kTh](http://latex.codecogs.com/gif.latex?k%5E%7Bth%7D) class. ![muk](http://latex.codecogs.com/gif.latex?%5Cmu%20_%7Bk%7D) is the mean of the ![kTh](http://latex.codecogs.com/gif.latex?k%5E%7Bth%7D) class to which ![xi](http://latex.codecogs.com/gif.latex?x%20_%7Bk%7D) belongs.
 
 The predictions are made by estimating the probability that a new input (x) belongs to each class, which are calculated using the Bayes Theorem:
 
