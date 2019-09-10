@@ -65,7 +65,8 @@ By using a Gaussian Distribution Function to estimate the probability (![probaPx
 
    ![Dxk](http://latex.codecogs.com/gif.latex?D_%7Bk%7D%28x%29%20%3D%20x%5Ctimes%20%5Cfrac%7B%5Cmu%20_%7Bk%7D%7D%7B%5Csigma%20%5E%7B2%7D%7D-%5Cfrac%7B%5Cmu%20_%7Bk%7D%5E%7B2%7D%7D%7B2%5Ctimes%20%5Csigma%20%5E%7B2%7D%7D&plus;ln%28P%28k%29%29)
    
-   where:  ![pk](http://latex.codecogs.com/gif.latex?P%28k%29%20%3D%20%5Cfrac%7Bn_%7Bk%7D%7D%7Bn%7D)
+   where:  
+   ![pk](http://latex.codecogs.com/gif.latex?P%28k%29%20%3D%20%5Cfrac%7Bn_%7Bk%7D%7D%7Bn%7D)
 ## Dependencies
 - numpy
 - matplotlib
