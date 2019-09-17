@@ -93,7 +93,9 @@ Where ![d](https://latex.codecogs.com/gif.latex?d) is the dimension of the input
 |Gaussian Naive Bayes|
 | --- |
 |When the data has real-valued attributes, the ***Gaussian Naive Bayes Algorithm*** is preferred. This later assumes that the distribution of features is Gaussian and calculates the conditional probabilities as follows:|
-|![gnb](https://latex.codecogs.com/gif.latex?P%28x_%7Bi%7D%7CC_%7Bk%7D%29%20%3D%20%5Cfrac%7B1%7D%7B%5Csqrt%7B2%5Cpi%20%5Csigma%20_%7BC_%7Bk%7D%7D%5E%7B2%7D%7D%7D%20e%5E%7B-%5Cfrac%7B%28x_%7Bi%7D-%5Cmu%20_%7BC_%7Bk%7D%7D%29%5E%7B2%7D%7D%7B2%5Csigma%20_%7BC_%7Bk%7D%7D%5E%7B2%7D%7D%7D)|
+|![gnb](https://latex.codecogs.com/gif.latex?P%28x_%7Bi%7D%7CC_%7Bk%7D%29%20%3D%20%5Cfrac%7B1%7D%7B%5Csqrt%7B2%5Cpi%20%5Csigma%20_%7Bi%2C%20k%7D%5E%7B2%7D%7D%7D%20%5Ccdot%20e%5E%7B-%5Cfrac%7B%28x_%7Bi%7D-%5Cmu%20_%7Bi%2C%20k%7D%29%5E%7B2%7D%7D%7B2%5Csigma%20_%7Bi%2C%20k%7D%5E%7B2%7D%7D%7D)|
+
+![muk]()
 
 ## Dependencies
 - numpy
