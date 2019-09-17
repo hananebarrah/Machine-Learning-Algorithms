@@ -74,6 +74,7 @@ The LDA algorithm is coded in the Python file liear_discriminant_analysis.py and
 
 ## 5. Naive Bayes Algorithm
 Naive bayes is a supervised ML algorithm based on the Bayes' Theorem.
+
 |Bayes' Theorem|
 | --- |
 The probability of the event A given B is the equal to the probability of the event B given A multiplied by the probability of A upon the probability of B|
