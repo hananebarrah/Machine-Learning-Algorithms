@@ -77,8 +77,11 @@ Naive bayes is a supervised ML algorithm based on the Bayes' Theorem.
 
 |Bayes' Theorem|
 | --- |
-The probability of the event A given B is the equal to the probability of the event B given A multiplied by the probability of A upon the probability of B|
-|![BayesTh](https://latex.codecogs.com/gif.latex?P%28A%7CB%29%3D%5Cfrac%7BP%28B%7CA%29*P%28A%29%7D%7BP%28B%29%7D)|
+The probability of the event A given B is the equal to the probability of the event B given A multiplied by the probability of A upon the probability of B. ![BayesTh](https://latex.codecogs.com/gif.latex?P%28A%7CB%29%3D%5Cfrac%7BP%28B%7CA%29*P%28A%29%7D%7BP%28B%29%7D)|
+|![posterior](https://latex.codecogs.com/gif.latex?P%28A%7CB%29%3A)  is the probability of occurrence of event A given the event B is true. It is called the ***Posterior Probability***|
+|![ab](https://latex.codecogs.com/gif.latex?P%28A%29%20and%20P%28B%29%3A)  these are the probabilities of accurrence of event A and B respectively. The first quantity is called the ***Prior Probability of Proposition***, while the last one is called the ***Prior Probability of Evidence***.|
+|![ba](https://latex.codecogs.com/gif.latex?P%28B%7CA%29%3A)  is the probability of occurrence of event B given the event A is true. It is called the ***Likelihood***|
+
 ## Dependencies
 - numpy
 - matplotlib
