@@ -83,8 +83,12 @@ The probability of the event A given B is the equal to the probability of the ev
 |![ab](https://latex.codecogs.com/gif.latex?P%28A%29%20and%20P%28B%29%3A)  these are the probabilities of accurrence of event A and B respectively. The first quantity is called the ***Prior Probability of Proposition***, while the last one is called the ***Prior Probability of Evidence***.|
 |![ba](https://latex.codecogs.com/gif.latex?P%28B%7CA%29%3A)  is the probability of occurrence of event B given the event A is true. It is called the ***Likelihood***|
 
-In a classification problem where multi-dimensional data are assigned to ![k](https://latex.codecogs.com/gif.latex?K) classes. The goal is to calculate the conditional probability of a new observation ![x](https://latex.codecogs.com/gif.latex?X) belongs to a class ![ck](https://latex.codecogs.com/gif.latex?C_%7Bk%7D)  :
+
+In a classification problem where multi-dimensional data are assigned to ![k](https://latex.codecogs.com/gif.latex?K) classes. The goal is to calculate the conditional probability of a new observation ![x](https://latex.codecogs.com/gif.latex?X) belongs to a class ![ck](https://latex.codecogs.com/gif.latex?C_%7Bk%5Cin%20%7B1%2C%20...%2C%20K%7D%7D)  :
+
 ![CiX](https://latex.codecogs.com/gif.latex?P%28C_%7Bk%7D%7C%20x_%7B1%7D%2C%20...%2C%20x_%7Bd%7D%29%3D%5Cfrac%7BP%28x_%7B1%7D%2C%20...%2C%20x_%7Bd%7D%7CC_%7Bk%7D%29%7D%7BP%28x_%7B1%7D%2C%20...%2C%20x_%7Bd%7D%29%7D)
+
+Where ![d](https://latex.codecogs.com/gif.latex?d) is the dimension of the input data (number of attributes)
 
 ## Dependencies
 - numpy
