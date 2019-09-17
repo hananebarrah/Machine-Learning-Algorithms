@@ -71,6 +71,13 @@ By using a Gaussian Distribution Function to estimate the probability ( ![probaP
 The class that provides the highest value of  ![Dxk](http://latex.codecogs.com/gif.latex?D_%7Bk%7D%28x%29)  is the output class. 
 
 The LDA algorithm is coded in the Python file liear_discriminant_analysis.py and tested of synthetic data generated using Gaussian Distribution function.
+
+## 5. Naive Bayes Algorithm
+Naive bayes is a supervised ML algorithm based on the Bayes' Theorem.
+|Bayes' Theorem|
+| --- |
+The probability of the event A given B is the equal to the probability of the event B given A multiplied by the probability of A upon the probability of B|
+|![BayesTh](https://latex.codecogs.com/gif.latex?P%28A%7CB%29%3D%5Cfrac%7BP%28B%7CA%29*P%28A%29%7D%7BP%28B%29%7D)|
 ## Dependencies
 - numpy
 - matplotlib
