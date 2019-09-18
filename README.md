@@ -12,11 +12,11 @@ k-means is (unsupervised algorithm) a hard clustering algorithm that consists of
 
 It takes as input a set of data ![eq2](http://latex.codecogs.com/gif.latex?D%20%3D%20%5Cleft%20%5C%7B%20X_%7Bj%7D%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bn%7D%20%5Cright%20%5C%7D_%7Bj%20%3D%201%2C%20...%2C%20N%7D) (n in the number of features and N in number of observations), the number of clusters k and creates iteratively k clusters.
 
-|Algorithm|
+|**k-means Algorithm**|
 | --- |
 |1.	Input the dataset D and initialize the clusters number k.|
 |2.	Initialize the clusters centers ![eq3](http://latex.codecogs.com/gif.latex?C%20%3D%20%5Cleft%20%5C%7B%20C_%7Bi%7D%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bn%7D%20%5Cright%20%5C%7D_%7Bi%20%3D%201%2C%20...%2C%20k%7D)  randomly from the input dataset.|
-|3.	Assign each datum ![eq4](http://latex.codecogs.com/gif.latex?X_%7Bj%7D) to the cluster of the nearest center|
+|3.	Assign each datum ![eq4](http://latex.codecogs.com/gif.latex?X_%7Bj%7D) to the cluster of the nearest center.|
 |4.	Update the clusters centers, each center ![eq5](http://latex.codecogs.com/gif.latex?C_%7Bi%7D) is computed as the mean of the points belonging to the ![eq6](http://latex.codecogs.com/gif.latex?i%5E%7Bth%7D) cluter.|
 |5.	Compute  ![eq7](http://latex.codecogs.com/gif.latex?%5Cleft%20%5C%7C%20C%5E%7BI%7D%20-%20C%5E%7BI-1%7D%5Cright%20%5C%7C), if it is smaller than a fixed threshold stop iterating, otherwise, repeat the process from the third step.|
 
@@ -75,13 +75,13 @@ The LDA algorithm is coded in the Python file *liear_discriminant_analysis.py* a
 ## 5. Naive Bayes Algorithm
 Naive bayes is a supervised ML algorithm based on the Bayes' Theorem.
 
-|Bayes' Theorem|
+|**Bayes' Theorem**|
 | --- |
-The probability of the event A given B is the equal to the probability of the event B given A multiplied by the probability of A upon the probability of B.
+|The probability of the event A given B is the equal to the probability of the event B given A multiplied by the probability of A upon the probability of B.
 ![BayesTh](https://latex.codecogs.com/gif.latex?P%28A%7CB%29%3D%5Cfrac%7BP%28B%7CA%29*P%28A%29%7D%7BP%28B%29%7D)|
-|![posterior](https://latex.codecogs.com/gif.latex?P%28A%7CB%29%3A)  is the probability of occurrence of event A given the event B is true. It is called the ***Posterior Probability***|
+|![posterior](https://latex.codecogs.com/gif.latex?P%28A%7CB%29%3A)  is the probability of occurrence of event A given the event B is true. It is called the ***Posterior Probability***.|
 |![ab](https://latex.codecogs.com/gif.latex?P%28A%29%20and%20P%28B%29%3A)  these are the probabilities of accurrence of event A and B respectively. The first quantity is called the ***Prior Probability of Proposition***, while the last one is called the ***Prior Probability of Evidence***.|
-|![ba](https://latex.codecogs.com/gif.latex?P%28B%7CA%29%3A)  is the probability of occurrence of event B given the event A is true. It is called the ***Likelihood***|
+|![ba](https://latex.codecogs.com/gif.latex?P%28B%7CA%29%3A)  is the probability of occurrence of event B given the event A is true. It is called the ***Likelihood***.|
 
 
 In a classification problem where multi-dimensional data are assigned to ![k](https://latex.codecogs.com/gif.latex?K) classes. The goal is to calculate the conditional probability of a new observation ![x](https://latex.codecogs.com/gif.latex?X) belongs to a class ![ck](https://latex.codecogs.com/gif.latex?C_%7Bk%5Cin%20%7B1%2C%20...%2C%20K%7D%7D)  :
@@ -92,7 +92,7 @@ Where ![d](https://latex.codecogs.com/gif.latex?d) is the dimension of the input
 
 The Naive Bayes algorithm for multi-dimensional ***categorical** data is implemented in the python file *naive_bayes_categorical_data.py* and tested on the data described in [1] and stored in the csv file *naive_bayes_data.csv*.
 
-|Gaussian Naive Bayes|
+|**Gaussian Naive Bayes**|
 | --- |
 |When the data has real-valued attributes, the ***Gaussian Naive Bayes Algorithm*** is preferred. This later assumes that the distribution of features is Gaussian and calculates the conditional probabilities as follows:|
 |![gnb](https://latex.codecogs.com/gif.latex?P%28x_%7Bi%7D%7CC_%7Bk%7D%29%20%3D%20%5Cfrac%7B1%7D%7B%5Csqrt%7B2%5Cpi%20%5Csigma%20_%7Bi%2C%20k%7D%5E%7B2%7D%7D%7D%20%5Ccdot%20e%5E%7B-%5Cfrac%7B%28x_%7Bi%7D-%5Cmu%20_%7Bi%2C%20k%7D%29%5E%7B2%7D%7D%7B2%5Csigma%20_%7Bi%2C%20k%7D%5E%7B2%7D%7D%7D)  |
