@@ -100,7 +100,7 @@ In the case of **non-categorical** data; data has real-valued attributes; the **
 
 ![nk](https://latex.codecogs.com/gif.latex?n_%7Bk%7D)  is number of observations in the class ![k](https://latex.codecogs.com/gif.latex?k).  ![xij](https://latex.codecogs.com/gif.latex?x_%7Bi%2C%20j%7D)  is the ![iTh](https://latex.codecogs.com/gif.latex?i%5E%7Bth%7D)  feature of the ![jTh](https://latex.codecogs.com/gif.latex?j%5E%7Bth%7D) observation.
 
-The python code of the Gaussian Naive Bayes aldorithm is described in *gaussian_naive_bayes.py* and tested on synthetic data generated randomly using gaussian destributions.
+The python code of the Gaussian Naive Bayes aldorithm is described in *gaussian_naive_bayes.py* and tested on synthetic data generated randomly using gaussian destributions. This code works on muli-dimensional data.
 
 ## Dependencies
 - numpy
