@@ -104,4 +104,4 @@ Where ![d](https://latex.codecogs.com/gif.latex?d) is the dimension of the input
 - matplotlib
 
 ## References
-Brownlee, J. Master Machine Learning Algorithms: Discover How They Work and Implement Them From Scratch. Jason Brownlee, 2016. https://books.google.co.ma/books?id=PdZBnQAACAAJ.
+[1] Brownlee, J. Master Machine Learning Algorithms: Discover How They Work and Implement Them From Scratch. Jason Brownlee, 2016. https://books.google.co.ma/books?id=PdZBnQAACAAJ.
