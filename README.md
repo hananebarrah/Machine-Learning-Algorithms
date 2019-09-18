@@ -97,7 +97,7 @@ Where ![d](https://latex.codecogs.com/gif.latex?d) is the dimension of the input
 | ![muk](https://latex.codecogs.com/gif.latex?%5Cmu%20_%7Bi%2C%20k%7D%3D%5Cfrac%7B1%7D%7Bn_%7Bk%7D%7D%5Ccdot%20%5Csum_%7Bj%5Cin%20C_%7Bk%7D%7Dx_%7Bi%2C%20j%7D)  |
 | ![sigma2](https://latex.codecogs.com/gif.latex?%5Csigma%20_%7Bi%2C%20k%7D%5E%7B2%7D%3D%5Cfrac%7B1%7D%7Bn_%7Bk%7D%7D%5Ccdot%20%5Csum_%7Bj%5Cin%20C_%7Bk%7D%7D%28x_%7Bi%2C%20j%7D-%5Cmu%20_%7Bi%2C%20k%7D%29%5E%7B2%7D)|
 
-![nk](https://latex.codecogs.com/gif.latex?n_%7Bk%7D)  is number of observations in the class ![k](https://latex.codecogs.com/gif.latex?k)
+![nk](https://latex.codecogs.com/gif.latex?n_%7Bk%7D)  is number of observations in the class ![k](https://latex.codecogs.com/gif.latex?k).  ![xij](https://latex.codecogs.com/gif.latex?x_%7Bi%2C%20j%7D)  is the ![iTh](https://latex.codecogs.com/gif.latex?i%5E%7Bth%7D)  feature of the ![jTh](https://latex.codecogs.com/gif.latex?j%5E%7Bth%7D) observation.
 
 ## Dependencies
 - numpy
