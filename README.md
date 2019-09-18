@@ -90,14 +90,13 @@ In a classification problem where multi-dimensional data are assigned to ![k](ht
 
 Where ![d](https://latex.codecogs.com/gif.latex?d) is the dimension of the input data (number of attributes). The new observation ![x](https://latex.codecogs.com/gif.latex?X) belongs to the class that provides the ***highest probability***.
 
-The Naive Bayes algorithm for multi-dimensional ***categorical** data is implemented in the python file *naive_bayes_categorical_data.py* and tested on the data described in [1] and stored in the csv file *naive_bayes_data.csv*.
+The Naive Bayes algorithm for multi-dimensional **categorical** data is implemented in the python file *naive_bayes_categorical_data.py* and tested on the data described in [1] and stored in the csv file *naive_bayes_data.csv*.
 
-|**Gaussian Naive Bayes**|
-| --- |
-|When the data has real-valued attributes, the ***Gaussian Naive Bayes Algorithm*** is preferred. This later assumes that the distribution of features is Gaussian and calculates the conditional probabilities as follows:|
-|![gnb](https://latex.codecogs.com/gif.latex?P%28x_%7Bi%7D%7CC_%7Bk%7D%29%20%3D%20%5Cfrac%7B1%7D%7B%5Csqrt%7B2%5Cpi%20%5Csigma%20_%7Bi%2C%20k%7D%5E%7B2%7D%7D%7D%20%5Ccdot%20e%5E%7B-%5Cfrac%7B%28x_%7Bi%7D-%5Cmu%20_%7Bi%2C%20k%7D%29%5E%7B2%7D%7D%7B2%5Csigma%20_%7Bi%2C%20k%7D%5E%7B2%7D%7D%7D)  |
-| ![muk](https://latex.codecogs.com/gif.latex?%5Cmu%20_%7Bi%2C%20k%7D%3D%5Cfrac%7B1%7D%7Bn_%7Bk%7D%7D%5Ccdot%20%5Csum_%7Bj%5Cin%20C_%7Bk%7D%7Dx_%7Bi%2C%20j%7D)  |
-| ![sigma2](https://latex.codecogs.com/gif.latex?%5Csigma%20_%7Bi%2C%20k%7D%5E%7B2%7D%3D%5Cfrac%7B1%7D%7Bn_%7Bk%7D%7D%5Ccdot%20%5Csum_%7Bj%5Cin%20C_%7Bk%7D%7D%28x_%7Bi%2C%20j%7D-%5Cmu%20_%7Bi%2C%20k%7D%29%5E%7B2%7D)|
+In the case of **non-categorical** data; data has real-valued attributes; the ***Gaussian Naive Bayes Algorithm*** is preferred. This later assumes that the distribution of features is Gaussian and calculates the conditional probabilities  ![xick](https://latex.codecogs.com/gif.latex?P%28x_%7Bi%7D%7CC_%7Bk%7D%29) using the statistical properties of the data as described bellow:
+
+|Conditional Probabilities|Means|Standard Deviations²|
+| :---: |:---: |:---: |
+|![gnb](https://latex.codecogs.com/gif.latex?P%28x_%7Bi%7D%7CC_%7Bk%7D%29%20%3D%20%5Cfrac%7B1%7D%7B%5Csqrt%7B2%5Cpi%20%5Csigma%20_%7Bi%2C%20k%7D%5E%7B2%7D%7D%7D%20%5Ccdot%20e%5E%7B-%5Cfrac%7B%28x_%7Bi%7D-%5Cmu%20_%7Bi%2C%20k%7D%29%5E%7B2%7D%7D%7B2%5Csigma%20_%7Bi%2C%20k%7D%5E%7B2%7D%7D%7D)| ![muk](https://latex.codecogs.com/gif.latex?%5Cmu%20_%7Bi%2C%20k%7D%3D%5Cfrac%7B1%7D%7Bn_%7Bk%7D%7D%5Ccdot%20%5Csum_%7Bj%5Cin%20C_%7Bk%7D%7Dx_%7Bi%2C%20j%7D)| ![sigma2](https://latex.codecogs.com/gif.latex?%5Csigma%20_%7Bi%2C%20k%7D%5E%7B2%7D%3D%5Cfrac%7B1%7D%7Bn_%7Bk%7D%7D%5Ccdot%20%5Csum_%7Bj%5Cin%20C_%7Bk%7D%7D%28x_%7Bi%2C%20j%7D-%5Cmu%20_%7Bi%2C%20k%7D%29%5E%7B2%7D)|
 
 ![nk](https://latex.codecogs.com/gif.latex?n_%7Bk%7D)  is number of observations in the class ![k](https://latex.codecogs.com/gif.latex?k).  ![xij](https://latex.codecogs.com/gif.latex?x_%7Bi%2C%20j%7D)  is the ![iTh](https://latex.codecogs.com/gif.latex?i%5E%7Bth%7D)  feature of the ![jTh](https://latex.codecogs.com/gif.latex?j%5E%7Bth%7D) observation.
 
