@@ -4,7 +4,7 @@ This repository includes basic ML algorithms coded in Python from scratch
 ## 1. Linear Regression algorithm
 Linear Regression is a supervised ML algorithm that aims to find the line (in case of 2D) that best fits a set of 2D scattered points. The model can be extended to a higher dimension, in this case we try to find the hyperplane that best approximate the scattered points. If the dimension of the input data (point) is D > 1 then the hyperplane dimension is (D-1), in this case the algorithm is called ***Multiple Linear Regression***.
 
-In linear_regression2D.py is implemented the ***Simple Linear Regression*** algorithm that uses the Gradient Descent optimization method to find the values of the coefficients b (bias or intercept) and m that define the line that best approximate the data included in the 'data.csv' file. The equation of that line is defined as follows:
+In *linear_regression2D.py* is implemented the ***Simple Linear Regression*** algorithm that uses the Gradient Descent optimization method to find the values of the coefficients b (bias or intercept) and m that define the line that best approximate the data included in the 'data.csv' file. The equation of that line is defined as follows:
   ![eq1](http://latex.codecogs.com/gif.latex?Y%20%3D%20m%5Ccdot%20X%20&plus;%20b)
 
 ## 2. K-means Clustering  algorithm
@@ -20,7 +20,7 @@ It takes as input a set of data ![eq2](http://latex.codecogs.com/gif.latex?D%20%
 |4.	Update the clusters centers, each center ![eq5](http://latex.codecogs.com/gif.latex?C_%7Bi%7D) is computed as the mean of the points belonging to the ![eq6](http://latex.codecogs.com/gif.latex?i%5E%7Bth%7D) cluter.|
 |5.	Compute  ![eq7](http://latex.codecogs.com/gif.latex?%5Cleft%20%5C%7C%20C%5E%7BI%7D%20-%20C%5E%7BI-1%7D%5Cright%20%5C%7C), if it is smaller than a fixed threshold stop iterating, otherwise, repeat the process from the third step.|
 
-The python code of the k-means algorithm is included in the file k-means.py,  it is tested on synthetic data.
+The python code of the k-means algorithm is included in the file *k-means.py*,  it is tested on synthetic data.
 
 ## 3. Logistic Regression
 Logistic regression is a supervised learning method for binary classification. It inherits the name ***Logistic*** from the logistic function (called also sigmoid function) that is used at core of the algorithm.
@@ -46,7 +46,7 @@ The main goal of this algorithm is to find the best values of ![bj](http://latex
    ![alpha](http://latex.codecogs.com/gif.latex?%5Calpha)  is the learning rate its good values are between 0.1 and 0.3, ![yi](http://latex.codecogs.com/gif.latex?y_%7Bi%7D)  is the actual label, ![yi^](http://latex.codecogs.com/gif.latex?%5Cwidehat%7By%7D_%7Bi%7D) is the predicted value, and ![xij](http://latex.codecogs.com/gif.latex?x_%7Bi%2Cj%7D)  is the ![jTh](http://latex.codecogs.com/gif.latex?j%5E%7Bth%7D) feature of the ![iTh](http://latex.codecogs.com/gif.latex?i%5E%7Bth%7D) observation.
    
  
- In the file LogisticRegression.py the logistic regression algorithm is implemented and tested on synthetic 2D data.
+ In the file *LogisticRegression.py* the logistic regression algorithm is implemented and tested on synthetic 2D data.
  
  ## 4. Linear Discriminant Analysis
  Linear Discriminant Analysis is a supervised ML algorithm that is used for multi-class classification problems. The model is defined by the mean of each class (![muk](http://latex.codecogs.com/gif.latex?%5Cmu_%7Bk%7D)) and the variance (![sigma](http://latex.codecogs.com/gif.latex?%5Csigma%20%5E%7B2%7D)):
@@ -70,7 +70,7 @@ By using a Gaussian Distribution Function to estimate the probability ( ![probaP
   
 The class that provides the highest value of  ![Dxk](http://latex.codecogs.com/gif.latex?D_%7Bk%7D%28x%29)  is the output class. 
 
-The LDA algorithm is coded in the Python file liear_discriminant_analysis.py and tested of synthetic data generated using Gaussian Distribution function.
+The LDA algorithm is coded in the Python file *liear_discriminant_analysis.py* and tested of synthetic data generated using Gaussian Distribution function.
 
 ## 5. Naive Bayes Algorithm
 Naive bayes is a supervised ML algorithm based on the Bayes' Theorem.
@@ -89,6 +89,8 @@ In a classification problem where multi-dimensional data are assigned to ![k](ht
 ![CiX](https://latex.codecogs.com/gif.latex?P%28C_%7Bk%7D%7CX%29%20%3D%20P%28C_%7Bk%7D%7Cx_%7B1%7D%2C%20...%2C%20x_%7Bd%7D%29%20%3D%20%5Cfrac%7BP%28x_%7B1%7D%2C%20...%2C%20x_%7Bd%7D%7CC_%7Bk%7D%29*P%28C_%7Bk%7D%29%7D%7BP%28x_%7B1%7D%2C%20...%2C%20x_%7Bd%7D%29%7D)
 
 Where ![d](https://latex.codecogs.com/gif.latex?d) is the dimension of the input data (number of attributes). The new observation ![x](https://latex.codecogs.com/gif.latex?X) belongs to the class that provides the ***highest probability***.
+
+The Naive Bayes algorithm for multi-dimensional ***categorical** data is implemented in the python file *naive_bayes_categorical_data.py* and tested on the data described in [1] and stored in the csv file *naive_bayes_data.csv*.
 
 |Gaussian Naive Bayes|
 | --- |
