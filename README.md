@@ -73,7 +73,7 @@ The class that provides the highest value of  ![Dxk](http://latex.codecogs.com/g
 The LDA algorithm is coded in the Python file *liear_discriminant_analysis.py* and tested of synthetic data generated using Gaussian Distribution function.
 
 ## 5. Naive Bayes Algorithm
-Naive bayes is a supervised ML algorithm based on the Bayes' Theorem.
+Naive bayes is a supervised ML algorithm for binary and multi-class classification problems, it has many applications such as text classification, spam filtration, sentiment analysis and recommendation systems. It is based on the Bayes' Theorem.
 
 |**Bayes' Theorem**|
 | --- |
