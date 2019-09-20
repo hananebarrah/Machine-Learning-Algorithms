@@ -102,6 +102,9 @@ In the case of **non-categorical** data; data has real-valued attributes; the **
 
 The python code of the Gaussian Naive Bayes aldorithm is described in *gaussian_naive_bayes.py* and tested on synthetic data generated randomly using gaussian destributions. This code works on muli-dimensional data.
 
+## 6. K-Nearest Neighbor Algorithm
+**KNN** is a supervised ML amgorithm that does not require any learning step. Actually, it uses each time the entire training dataset to make a new prediction which makes it a little bit slower than the other ML algorithms. The prediction for a new data point is made my comparing it with all the observations in order to choose the ![k](https://latex.codecogs.com/gif.latex?k) most similar ones and then the result  is the mean/ median value in case of a **regression** problem or the most common class value in case of a **classification** problem. To do so, a distance measure is used (Euclidian, Manhatten, Hamming, ...).
+
 ## Dependencies
 - numpy
 - matplotlib
