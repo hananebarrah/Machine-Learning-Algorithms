@@ -105,9 +105,8 @@ The python code of the Gaussian Naive Bayes aldorithm is described in *gaussian_
 ## 6. K-Nearest Neighbor Algorithm
 **KNN** is a supervised ML amgorithm that does not require any learning step. Actually, it uses each time the entire training dataset to make a new prediction which makes it a little bit slower than the other ML algorithms. The prediction for a new data point is made my comparing it with all the observations in order to choose the ![k](https://latex.codecogs.com/gif.latex?k) most similar ones and then the result  is the mean/ median value in case of a **regression** problem, or the most common class value in case of a **classification** problem. To do so, a distance measure is used (Euclidean, Manhatten, Hamming, ...) based on the data properties. When the input variables are real-valued and have the same scale, the Euclidean distance is a good choice. It is calculated as  follows:
 
-|||
-| --- | --- |
-|![distance](https://latex.codecogs.com/gif.latex?EuclideanDistance%28X%2C%20Y%29%3D%5Csqrt%7B%5Csum_%7Bi%3D1%7D%5E%7Bd%7D%28x_%7Bi%7D-y_%7Bi%7D%29%5E%7B2%7D%7D)|![x](https://latex.codecogs.com/gif.latex?X%3D%5Bx_%7B1%7D%2C%20...%2C%20x_%7Bd%7D%5D) ![y](https://latex.codecogs.com/gif.latex?Y%3D%5By_%7B1%7D%2C%20...%2C%20y_%7Bd%7D%5D)|
+| --- | --- | --- |
+|![distance](https://latex.codecogs.com/gif.latex?EuclideanDistance%28X%2C%20Y%29%3D%5Csqrt%7B%5Csum_%7Bi%3D1%7D%5E%7Bd%7D%28x_%7Bi%7D-y_%7Bi%7D%29%5E%7B2%7D%7D);|![x](https://latex.codecogs.com/gif.latex?X%3D%5Bx_%7B1%7D%2C%20...%2C%20x_%7Bd%7D%5D);| ![y](https://latex.codecogs.com/gif.latex?Y%3D%5By_%7B1%7D%2C%20...%2C%20y_%7Bd%7D%5D)|
 
 ## Dependencies
 - numpy
