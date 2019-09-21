@@ -117,6 +117,7 @@ In *k_nearest_neighbor.py* the **KNN** algorithm is implemented and tested on sy
 
 ## 7. Learning Vector Quantization
 **LVQ** is an artificial neural network algorithm for binary and multiclass classification that has been adopted for regression too. It uses the principle of the nearest neighbor used by the **KNN** algorithm. In contrast to KNN, the **LVQ** requires a training stage where it learns from the entire dataset a smaller set of vectors (called the *codebook*) that best characterize the separation of the classes. Instead of using the entire training data to search for the nearest neighbor, we search in the *codebook*.
+
 |**Learning Algorithm**|
 | --- |
 |Initialize randomly the *codebook* with vectors generated randomly or chosen from the training dataset.|
