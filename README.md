@@ -123,7 +123,9 @@ In *k_nearest_neighbor.py* the **KNN** algorithm is implemented and tested on sy
 |**Learning Algorithm**|
 | --- |
 |Initialize randomly the *codebook* with vectors generated randomly or chosen from the training dataset.|
-|Update the *codebook* for each observation of the training dataset.|
+|Update the *codebook* for each observation of the training dataset.
+
+For each :|
 
 ## Dependencies
 - numpy
