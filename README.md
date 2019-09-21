@@ -111,7 +111,11 @@ The python code of the Gaussian Naive Bayes aldorithm is described in *gaussian_
 
 ![y](https://latex.codecogs.com/gif.latex?Y%3D%5By_%7B1%7D%2C%20...%2C%20y_%7Bd%7D%5D)
 
+The parameter ![k](https://latex.codecogs.com/gif.latex?k) has to be chosen using a **Cross-Validation** method. In fact, the training data has to be splitted, several times, into training and testing sets. Each time we test the algorithm with different values of ![k](https://latex.codecogs.com/gif.latex?k) in order to choose the ![k](https://latex.codecogs.com/gif.latex?k) that provides the best result. In addition, it is important to pay attention to the number of classes when choosing ![k](https://latex.codecogs.com/gif.latex?k). Actually, if the number of classes is odd then ![k](https://latex.codecogs.com/gif.latex?k) must be an even number, and the inverse is correct.
 In *k_nearest_neighbor.py* the **KNN** algorithm is implemented and tested on synthetic data generated randomly using gaussian destributions. This code works on muli-dimensional data.
+
+## 7. Learning Vector Quantization
+
 
 ## Dependencies
 - numpy
