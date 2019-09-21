@@ -123,13 +123,13 @@ In *k_nearest_neighbor.py* the **KNN** algorithm is implemented and tested on sy
 |**Learning Algorithm**|
 | --- |
 |1- Initialize randomly the *codebook* with vectors generated randomly or chosen from the training dataset.|
-|2- Update the *codebook* for each observation of the training dataset.|
+|2- Update the *codebook* for each observation of the training dataset:|
 |______ For each ![xi](https://latex.codecogs.com/gif.latex?x_%7Bi%7D) in the training dataset:|
 |____________ Choose its nearest vector ![Vnear](https://latex.codecogs.com/gif.latex?v_%7Bnearest%7D) from the *codebook*.|
 |____________ If ![xi](https://latex.codecogs.com/gif.latex?x_%7Bi%7D)  and  ![Vnear](https://latex.codecogs.com/gif.latex?v_%7Bnearest%7D)  belong to the same class, then move ![Vnear](https://latex.codecogs.com/gif.latex?v_%7Bnearest%7D) closer to  ![xi](https://latex.codecogs.com/gif.latex?x_%7Bi%7D) using the following expression:|
-|![close](https://latex.codecogs.com/gif.latex?v_%7Bnearest%7D%20%3D%20v_%7Bnearest%7D%20&plus;%20LearningRate%5Ctimes%20%28x_%7Bi%7D-v_%7Bnearest%7D%29)|
+|__________________![close](https://latex.codecogs.com/gif.latex?v_%7Bnearest%7D%20%3D%20v_%7Bnearest%7D%20&plus;%20LearningRate%5Ctimes%20%28x_%7Bi%7D-v_%7Bnearest%7D%29)|
 |____________ Else, move ![Vnear](https://latex.codecogs.com/gif.latex?v_%7Bnearest%7D) away from  ![xi](https://latex.codecogs.com/gif.latex?x_%7Bi%7D) using the following expression:|
-|![away](https://latex.codecogs.com/gif.latex?v_%7Bnearest%7D%20%3D%20v_%7Bnearest%7D%20-%20LearningRate%5Ctimes%20%28x_%7Bi%7D-v_%7Bnearest%7D%29)|
+|__________________![away](https://latex.codecogs.com/gif.latex?v_%7Bnearest%7D%20%3D%20v_%7Bnearest%7D%20-%20LearningRate%5Ctimes%20%28x_%7Bi%7D-v_%7Bnearest%7D%29)|
 
 ## Dependencies
 - numpy
