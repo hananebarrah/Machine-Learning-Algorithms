@@ -116,7 +116,11 @@ The parameter ![k](https://latex.codecogs.com/gif.latex?k) has to be chosen usin
 In *k_nearest_neighbor.py* the **KNN** algorithm is implemented and tested on synthetic data generated randomly using gaussian destributions. This code works on muli-dimensional data.
 
 ## 7. Learning Vector Quantization
-**LVQ** is an artificial neural network algorithm for binary and multiclass classification that has been adopted for regression too. It uses the principle of the nearest neighbor used by the **KNN** algorithm. In contrast to KNN, the **LVQ** requires a training stage where it learns from the entire dataset a smaller set of vectors (called the *codebook*) that best characterize the separation of the classes. Instead of using the entire training data to search for the nearest neighbor, we search it the *codebook*.
+**LVQ** is an artificial neural network algorithm for binary and multiclass classification that has been adopted for regression too. It uses the principle of the nearest neighbor used by the **KNN** algorithm. In contrast to KNN, the **LVQ** requires a training stage where it learns from the entire dataset a smaller set of vectors (called the *codebook*) that best characterize the separation of the classes. Instead of using the entire training data to search for the nearest neighbor, we search in the *codebook*.
+|**Learning Algorithm**|
+| --- |
+|Initialize randomly the *codebook* with vectors generated randomly or chosen from the training dataset.|
+|Update the *codebook* for each observation of the training dataset.|
 
 ## Dependencies
 - numpy
