@@ -131,6 +131,12 @@ In *k_nearest_neighbor.py* the **KNN** algorithm is implemented and tested on sy
 |____________ Else, move ![Vnear](https://latex.codecogs.com/gif.latex?v_%7Bnearest%7D) away from  ![xi](https://latex.codecogs.com/gif.latex?x_%7Bi%7D) using the following expression:|
 |__________________![away](https://latex.codecogs.com/gif.latex?v_%7Bnearest%7D%20%3D%20v_%7Bnearest%7D%20-%20LearningRate%5Ctimes%20%28x_%7Bi%7D-v_%7Bnearest%7D%29)|
 
+Updating the *codebook* has to be repeated several times, the number of iterations (called also **epochs**) is set by the user to 50, 100, or more.
+
+![LR](https://latex.codecogs.com/gif.latex?LearningRate) is a parameter that controls the amount of moving a codebook vector to or away from the training data. This parameter has to be decreased in each iteration (epoch) in order to make minor changes when the processing is close to the end (to the maximum number of iterations).
+
+The **LVQ** algorithm is coded in *learning_vector_quantization_regression.py* and tested on synthetic data generated randomly using Gaussian distributions.
+
 ## Dependencies
 - numpy
 - matplotlib
