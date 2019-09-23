@@ -137,6 +137,11 @@ Updating the *codebook* has to be repeated several times, the number of iteratio
 
 The **LVQ** algorithm is coded in *learning_vector_quantization_regression.py* and tested on synthetic data generated randomly using Gaussian distributions.
 
+# 8. Support Vector Machine: SVM
+**SVM** is a supervised ML algorithm for binary classification problems. It aim at finding the optimal hyperplane that maximizes the margin between two data classes using an optimization method such as the gradient descent.
+
+The optimal hyperplane is a linear surface that splits the surface into two parts. If the data points are in ![R^n](https://latex.codecogs.com/gif.latex?%5Cmathbb%7BR%7D%5E%7Bn%7D), then the hyperplane is an ![n-1](https://latex.codecogs.com/gif.latex?%28n-1%29) dimensional subspace. 
+
 ## Dependencies
 - numpy
 - matplotlib
