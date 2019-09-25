@@ -161,17 +161,17 @@ The loss function is defined as follows:
 
 The main aim of the **SVM** algorithm is to find the parameters ![w](https://latex.codecogs.com/gif.latex?w) and ![b](https://latex.codecogs.com/gif.latex?b) that defines the decision boundary. In other words, the **SVM** aims at minimizing the loss function for all the training data and maximizing the margin between the two classes.
 
-Let ![x+](https://latex.codecogs.com/gif.latex?x_%7B&plus;%7D) and ![x-](https://latex.codecogs.com/gif.latex?x_%7B-%7D) be a positive and a negative support vector respectively, then the width of the gutter if defined as:
+Let ![x+](https://latex.codecogs.com/gif.latex?x%5E%7B&plus;%7D) and ![x-](https://latex.codecogs.com/gif.latex?x%5E%7B-%7D) be a positive and a negative support vector respectively, then the width of the gutter if defined as:
 
 ![width](https://latex.codecogs.com/gif.latex?width%3D%28x_%7B&plus;%7D-x_%7B-%7D%29%5Ccdot%20%5Cfrac%7Bw%7D%7B%5Cleft%20%5C%7C%20w%20%5Cright%20%5C%7C%7D)
 
 After simplifying the previous expression, we find that:
 
-![width](https://latex.codecogs.com/gif.latex?width%3D%5Cfrac%7B2%7D%7B%5Cleft%20%5C%7C%20w%20%5Cright%20%5C%7C%7D)
+![width](https://latex.codecogs.com/gif.latex?width%20%3D%20%28x%5E%7B&plus;%7D-x%5E%7B-%7D%29%5Ccdot%20%5Cfrac%7Bw%7D%7B%5Cleft%20%5C%7C%20w%20%5Cright%20%5C%7C%7D)
 
 The **SVM** optimization problem can be formulated as follows:
 
-![svm]https://latex.codecogs.com/gif.latex?min_%7Bw%2C%20b%7D%20%5C%2C%20%5C%3B%20%5Clambda%20%5Ccdot%20%5Cleft%20%5C%7C%20w%20%5Cright%20%5C%7C%5E%7B2%7D%20&plus;%5Csum_%7Bi%3D1%7D%5E%7BN%7D%20LF%28x_%7Bi%7D%2C%20y_%7Bi%7D%2C%20f%28x_%7Bi%7D%29%29)
+![svm](https://latex.codecogs.com/gif.latex?min_%7Bw%2C%20b%7D%20%5C%2C%20%5C%3B%20%5Clambda%20%5Ccdot%20%5Cleft%20%5C%7C%20w%20%5Cright%20%5C%7C%5E%7B2%7D%20&plus;%5Csum_%7Bi%3D1%7D%5E%7BN%7D%20LF%28x_%7Bi%7D%2C%20y_%7Bi%7D%2C%20f%28x_%7Bi%7D%29%29)
 
 ![lambda](https://latex.codecogs.com/gif.latex?%5Clambda) is a regularizer parameter and ![N](https://latex.codecogs.com/gif.latex?N) is the total number of observations.
 
