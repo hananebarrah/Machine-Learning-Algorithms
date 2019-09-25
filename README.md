@@ -140,11 +140,11 @@ The **LVQ** algorithm is coded in *learning_vector_quantization_regression.py* a
 # 8. Support Vector Machines: SVM
 **SVM** is a supervised ML algorithm for binary classification problems. It aim at finding the optimal hyperplane that maximizes the margin width between two data classes using an optimization method such as the gradient descent. It assumes that all the data features are numerical.
 
-The hyperplane is a linear surface that splits the surface into two parts. If the data points are in ![R^n](https://latex.codecogs.com/gif.latex?%5Cmathbb%7BR%7D%5E%7Bn%7D), then the hyperplane is an ![n-1](https://latex.codecogs.com/gif.latex?%28n-1%29) dimensional subspace. Rhe figure bellow show the boundary decision that separates positive and negative samples.
+The hyperplane is a linear surface that splits the surface into two parts. If the data points are in ![R^n](https://latex.codecogs.com/gif.latex?%5Cmathbb%7BR%7D%5E%7Bn%7D), then the hyperplane is an ![n-1](https://latex.codecogs.com/gif.latex?%28n-1%29) dimensional subspace. The figure bellow shows the boundary decision (red line) that separates positive and negative samples.
 
 ![img](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Separatrice_lineaire_avec_marges.svg/400px-Separatrice_lineaire_avec_marges.svg.png)
 
-![w](https://latex.codecogs.com/gif.latex?w) is a vector that is perpendecular to the decision boundary (red line). positive samples are labeled as (+1) while the negative samples are labeled as (-1). The decision rule is defined as follows:
+![w](https://latex.codecogs.com/gif.latex?w) is a vector that is perpendecular to the decision boundary (red line). positive samples are labeled as (+1) while the negative samples are labeled as (-1). Circled samples are called the **Support Vectors**. The decision rule is defined as follows:
 
 |**Decision rule**|**Class**|**Label ![yi](https://latex.codecogs.com/gif.latex?y_%7Bi%7D)**|
 | --- | --- | --- |
@@ -153,7 +153,8 @@ The hyperplane is a linear surface that splits the surface into two parts. If th
 
 The main aim of the **SVM** algorithm is to find the parameters ![w](https://latex.codecogs.com/gif.latex?w) and ![b](https://latex.codecogs.com/gif.latex?b) that defines the decision boundary.
 
-If we set ![fx](https://latex.codecogs.com/gif.latex?f%28x_%7Bi%7D%29%3Dw.x_%7Bi%7D&plus;b), then, according to the decision rule we have ![yifs](https://latex.codecogs.com/gif.latex?y_%7Bi%7D*f%28x_%7Bi%7D%29%5Cgeq%201) 
+If we set ![fx](https://latex.codecogs.com/gif.latex?f%28x_%7Bi%7D%29%3Dw.x_%7Bi%7D&plus;b), then, according to the decision rule we have ![yifx](https://latex.codecogs.com/gif.latex?y_%7Bi%7D*f%28x_%7Bi%7D%29%5Cgeq%201) for all the well classified points. For samples inside the gutter we have ![yifx1](https://latex.codecogs.com/gif.latex?y_%7Bi%7D*f%28x_%7Bi%7D%29%3D%201). The loss function is defined as follows:
+![loss](https://latex.codecogs.com/gif.latex?LF%28x_%7Bi%7D%2C%20y_%7Bi%7D%2C%20f%28x_%7Bi%7D%29%29%3D%5Cleft%5C%7B%5Cbegin%7Bmatrix%7D%200%2C%20if%20y_%7Bi%7D%5Ccdot%20f%28x_%7Bi%7D%29%5Cgeq%201%5C%5C%201-y_%7Bi%7D%5Ccdot%20f%28x_%7Bi%7D%29%2C%20else%5Cend%7Bmatrix%7D%5Cright.)
 
 
 ## Dependencies
