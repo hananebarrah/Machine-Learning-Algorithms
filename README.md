@@ -144,6 +144,7 @@ The hyperplane is a linear surface that splits the surface into two parts. If th
 
 ![img](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Separatrice_lineaire_avec_marges.svg/400px-Separatrice_lineaire_avec_marges.svg.png)
 
+
 ![w](https://latex.codecogs.com/gif.latex?w) is a vector that is perpendecular to the decision boundary (red line). positive samples are labeled as (+1) while the negative samples are labeled as (-1). Circled samples are called the **Support Vectors**. The decision rule is defined as follows:
 
 |**Decision rule**|**Class**|**Label ![yi](https://latex.codecogs.com/gif.latex?y_%7Bi%7D)**|
@@ -154,11 +155,17 @@ The hyperplane is a linear surface that splits the surface into two parts. If th
 
 If we set ![fx](https://latex.codecogs.com/gif.latex?f%28x_%7Bi%7D%29%3Dw.x_%7Bi%7D&plus;b), then, according to the decision rule we have ![yifx](https://latex.codecogs.com/gif.latex?y_%7Bi%7D*f%28x_%7Bi%7D%29%5Cgeq%201) for all the well classified points. For samples inside the gutter we have ![yifx1](https://latex.codecogs.com/gif.latex?y_%7Bi%7D*f%28x_%7Bi%7D%29%3D%201).
 
-The loss function is defined as: ![loss](https://latex.codecogs.com/gif.latex?LF%28x_%7Bi%7D%2C%20y_%7Bi%7D%2C%20f%28x_%7Bi%7D%29%29%3D%5Cleft%5C%7B%5Cbegin%7Bmatrix%7D%200%2C%20if%20y_%7Bi%7D%5Ccdot%20f%28x_%7Bi%7D%29%5Cgeq%201%5C%5C%201-y_%7Bi%7D%5Ccdot%20f%28x_%7Bi%7D%29%2C%20else%5Cend%7Bmatrix%7D%5Cright.)
+The loss function is defined as follows:
 
-The main aim of the **SVM** algorithm is to find the parameters ![w](https://latex.codecogs.com/gif.latex?w) and ![b](https://latex.codecogs.com/gif.latex?b) that defines the decision boundary. In other words, the **SVM** aims at minimizing the loss function for all the training data and maximize the margin between the two classes.
+![loss](https://latex.codecogs.com/gif.latex?LF%28x_%7Bi%7D%2C%20y_%7Bi%7D%2C%20f%28x_%7Bi%7D%29%29%3D%5Cleft%5C%7B%5Cbegin%7Bmatrix%7D%200%2C%20if%20y_%7Bi%7D%5Ccdot%20f%28x_%7Bi%7D%29%5Cgeq%201%5C%5C%201-y_%7Bi%7D%5Ccdot%20f%28x_%7Bi%7D%29%2C%20else%5Cend%7Bmatrix%7D%5Cright.)
 
-Let ![x+](https://latex.codecogs.com/gif.latex?x_%7B&plus;%7D) and ![x-](https://latex.codecogs.com/gif.latex?x_%7B-%7D) be a positive and negative support vector, the width of the gutter if defined as: ![width](https://latex.codecogs.com/gif.latex?width%3D%28x_%7B&plus;%7D-x_%7B-%7D%29%5Ccdot%20%5Cfrac%7Bw%7D%7B%5Cleft%20%5C%7C%20w%20%5Cright%20%5C%7C%7D)
+The main aim of the **SVM** algorithm is to find the parameters ![w](https://latex.codecogs.com/gif.latex?w) and ![b](https://latex.codecogs.com/gif.latex?b) that defines the decision boundary. In other words, the **SVM** aims at minimizing the loss function for all the training data and maximizing the margin between the two classes.
+
+Let ![x+](https://latex.codecogs.com/gif.latex?x_%7B&plus;%7D) and ![x-](https://latex.codecogs.com/gif.latex?x_%7B-%7D) be a positive and a negative support vector respectively, then the width of the gutter if defined as:
+
+![width](https://latex.codecogs.com/gif.latex?width%3D%28x_%7B&plus;%7D-x_%7B-%7D%29%5Ccdot%20%5Cfrac%7Bw%7D%7B%5Cleft%20%5C%7C%20w%20%5Cright%20%5C%7C%7D)
+
+After simplyfing the previous expression, we find that ![width](https://latex.codecogs.com/gif.latex?width%3D%5Cfrac%7B2%7D%7B%5Cleft%20%5C%7C%20w%20%5Cright%20%5C%7C%7D)
 
 
 ## Dependencies
