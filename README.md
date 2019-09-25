@@ -173,7 +173,7 @@ The **SVM** optimization problem can be formulated as follows:
 
 ![svm](https://latex.codecogs.com/gif.latex?min_%7Bw%2C%20b%7D%20%5C%2C%20%5C%3B%20%5Clambda%20%5Ccdot%20%5Cleft%20%5C%7C%20w%20%5Cright%20%5C%7C%5E%7B2%7D%20&plus;%5Csum_%7Bi%3D1%7D%5E%7BN%7D%20LF%28x_%7Bi%7D%2C%20y_%7Bi%7D%2C%20f%28x_%7Bi%7D%29%29)
 
-![lambda](https://latex.codecogs.com/gif.latex?%5Clambda) is a regularizer parameter and ![N](https://latex.codecogs.com/gif.latex?N) is the total number of observations.
+![lambda](https://latex.codecogs.com/gif.latex?%5Clambda) is a regularizer parameter and ![N](https://latex.codecogs.com/gif.latex?N) is the total number of observations. The algorithm that minimizes the above objective function is coded in Python if *svm_classifier_sgd.py*.
 
 
 ## Dependencies
