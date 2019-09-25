@@ -144,6 +144,16 @@ The hyperplane is a linear surface that splits the surface into two parts. If th
 
 ![img](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Separatrice_lineaire_avec_marges.svg/400px-Separatrice_lineaire_avec_marges.svg.png)
 
+![w](https://latex.codecogs.com/gif.latex?w) is a vector that is perpendecular to the decision boundary (red line). positive samples are labeled as (+1) while the negative samples are labeled as (-1). The decision rule is defined as follows:
+
+|**Decision rule**|**Class**|**Label ![yi](https://latex.codecogs.com/gif.latex?y_%7Bi%7D)**|
+| --- | --- | --- |
+|![rule](https://latex.codecogs.com/gif.latex?w.x&plus;b%20%5Cgeqslant%201)|positive samples|1|
+|![rule](https://latex.codecogs.com/gif.latex?w.x&plus;b%20%5Cleqslant%20-1)|megative samples|-1|
+
+The main aim of the **SVM** algorithm is to find the parameters ![w](https://latex.codecogs.com/gif.latex?w) and ![b](https://latex.codecogs.com/gif.latex?b) that defines the decision boundary.
+
+
 ## Dependencies
 - numpy
 - matplotlib
