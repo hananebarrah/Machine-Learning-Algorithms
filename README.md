@@ -153,6 +153,8 @@ The hyperplane is a linear surface that splits the surface into two parts. If th
 
 The main aim of the **SVM** algorithm is to find the parameters ![w](https://latex.codecogs.com/gif.latex?w) and ![b](https://latex.codecogs.com/gif.latex?b) that defines the decision boundary.
 
+If we set ![fx](https://latex.codecogs.com/gif.latex?f%28x_%7Bi%7D%29%3Dw.x_%7Bi%7D&plus;b), then, according to the decision rule we have ![yifs](https://latex.codecogs.com/gif.latex?y_%7Bi%7D*f%28x_%7Bi%7D%29%5Cgeq%201) 
+
 
 ## Dependencies
 - numpy
