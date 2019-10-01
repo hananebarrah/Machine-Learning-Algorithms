@@ -176,6 +176,8 @@ The **SVM** optimization problem can be formulated as follows:
 ![lambda](https://latex.codecogs.com/gif.latex?%5Clambda) is a regularizer parameter and ![N](https://latex.codecogs.com/gif.latex?N) is the total number of observations. The algorithm that minimizes the above objective function, using the gradient descent method, is coded in Python in *svm_classifier_gd.py*. This code works on muli-dimensional data.
 
 
+$$ f(x) = 2x+3
+
 ## Dependencies
 - numpy
 - matplotlib
